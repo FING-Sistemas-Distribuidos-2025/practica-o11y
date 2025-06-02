@@ -1,0 +1,9 @@
+prometheus:
+  prometheusSpec:
+    maximumStartupDurationSeconds: 900
+    enableOTLPReceiver: true
+    additionalArgs:
+      - name: web.enable-otlp-receiver
+        value: ""
+    enableFeatures:
+      - otlp-write-receiver
